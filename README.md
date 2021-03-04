@@ -17,6 +17,7 @@ You have a few options for installation:
 - Install the dependencies for the koans (such as Clojure) on your machine
 - Use Vagrant and the configuration in this repository
 - Use Docker
+  - Use Docker with Visual Studio Code 
 
 Instructions for each option are below!
 
@@ -69,6 +70,14 @@ To start up a REPL:
 docker run --rm -it -v $(pwd):/app -w /app clojure lein repl
 ```
 
+### Running with Visual Studio Code and Remote Containers (docker)
+
+Once you've have [Docker](https://www.docker.com/) and [vscode](https://code.visualstudio.com/) installed,
+you need to install the [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) plugin within vscode.
+
+Vscode will detect that you have the necessary files to start a docker container and prompt you to start a container. After the container has started you'll be able to access the container's terminal to run any CLI commands. The [Calva](https://calva.io/) plugin will also be installed, within the container, which you can use to start and connect to a REPL.
+
+Any other plugins you want installed, for vscode, should be added to the `.devcontainer/devcontainer.json` file
 
 ## Running the Koans
 

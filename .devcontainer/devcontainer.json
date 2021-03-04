@@ -1,0 +1,8 @@
+{
+	"name": "clojure-koans",
+	"dockerFile": "Dockerfile",
+	"extensions": [
+		"betterthantomorrow.calva",
+		"avli.clojure",
+	],
+}

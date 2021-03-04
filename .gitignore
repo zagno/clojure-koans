@@ -18,6 +18,7 @@ pom.xml.asc
 .lein-plugins/
 .lein-failures
 .nrepl-port
+.lsp
 
 
 ### OSX ###
@@ -204,3 +205,6 @@ sftp-config.json
 # Vagrant
 .vagrant/
 ubuntu-xenial-16.04-cloudimg-console.log
+
+# vscode
+.calva
